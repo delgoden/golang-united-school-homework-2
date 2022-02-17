@@ -21,11 +21,11 @@ const (
 func CalcSquare(sideLen float64, sidesNum numSides) (square float64) {
 	switch sidesNum {
 	case 3:
-		square = math.Pow(3.0, 0.5) / 4.0 * math.Pow(sideLen, 2)
+		square = math.Pow(3.0, 0.5) / 4.0 * math.Pow(sideLen, 2.0)
 	case 4:
-		square = math.Pow(sideLen, 2)
+		square = math.Pow(sideLen, 2.0)
 	case 0:
-		square = math.Pi * math.Pow(sideLen, 2)
+		square = math.Pi * math.Pow(sideLen, 2.0)
 	default:
 		square = 0
 	}
